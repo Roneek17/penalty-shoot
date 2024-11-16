@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Penalty Shootout Game</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="icon" type="image/png" href="ball.png">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Penalty Shootout!</h1>
+        <div class="scoreboard">
+            <span>Goals: <span id="goals">0</span></span>
+            <span>Misses: <span id="misses">0</span></span>
+            <span>Attempts: <span id="attempts">0</span></span>
+        </div>
+        <div class="goal-area">
+            <img src="goalpost.jpg" alt="Goalpost" class="goalpost">
+            <img src="keeper.png" alt="Goalkeeper" class="goalkeeper" id="goalkeeper">
+            <img src="ball.png" alt="Ball" class="ball" id="ball">
+        </div>
+        <div class="result" id="result">Take your shot!</div>
+    </div>
+
+    <audio id="cheering-sound" src="cheeringsound.mp3" loop></audio>
+    <audio id="ball-hit-sound" src="ballhit.wav"></audio>
+    <audio id="goal-sound" src="goal2.mp3"></audio>
+
+    <script src="game.js"></script>
+</body>
+</html>
